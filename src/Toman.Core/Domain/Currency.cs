@@ -78,10 +78,32 @@ public class Currency
         if (decimalCount < 0 || decimalCount > 28)
             throw new ArgumentOutOfRangeException("decimalCount's value cannot be less than zero or greater than 28.");
 
+        Id = Guid.NewGuid();
         PersianName = persianName;
         Locations = locations;
         WikipediaUrl = wikipediaUrl;
     }
+
     
+    /// <summary>
+    /// Creates a new Currency.
+    /// </summary>
+    /// <param name="code">Currency Code</param>
+    /// <param name="numberCode">Currency Numeric code</param>
+    /// <param name="englishName">Currency English name</param>
+    /// <param name="symbol">Currency Symbol</param>
+    /// <param name="decimalCount">Decimal digits count for the currency</param>
+    /// <param name="persianName">Persian name for the currency</param>
+    /// <param name="locations">Locations which support this currency</param>
+    /// <param name="wikipediaUrl">The url for Wikipedia page for this currency</param>
+    /// <returns>A new currency with the specified attributes.</returns>
+    public static Currency Create(
+        string code, string numberCode, string englishName, string symbol, int decimalCount, 
+        string? persianName = null, string[]? locations = null, string? wikipediaUrl = null)
+    {
+        return new Currency(
+            code, numberCode, englishName, symbol, decimalCount,
+            persianName, locations, wikipediaUrl);
+    }
     
 }
