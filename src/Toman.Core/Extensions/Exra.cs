@@ -1,29 +1,5 @@
 
 
-["ISO-4217::MWK"] = new Currency("MWK", "454", 2, "Malawi kwacha", "MK"),
-["ISO-4217::MXN"] = new Currency("MXN", "484", 2, "Mexican peso", "$"),
-["ISO-4217::MXV"] = new Currency("MXV", "979", 2, "Mexican Unidad de Inversion (UDI) (funds code)", Currency.GenericCurrencySign),  // <==== not found
-["ISO-4217::MYR"] = new Currency("MYR", "458", 2, "Malaysian ringgit", "RM"),
-["ISO-4217::MZN"] = new Currency("MZN", "943", 2, "Mozambican metical", "MTn"), // or MTN
-["ISO-4217::NAD"] = new Currency("NAD", "516", 2, "Namibian dollar", "N$"), // or $
-["ISO-4217::NGN"] = new Currency("NGN", "566", 2, "Nigerian naira", "₦"),
-["ISO-4217::NIO"] = new Currency("NIO", "558", 2, "Nicaraguan córdoba", "C$"),
-["ISO-4217::NOK"] = new Currency("NOK", "578", 2, "Norwegian krone", "kr"),
-["ISO-4217::NPR"] = new Currency("NPR", "524", 2, "Nepalese rupee", "Rs"), // or ₨ or रू
-["ISO-4217::NZD"] = new Currency("NZD", "554", 2, "New Zealand dollar", "$"),
-["ISO-4217::OMR"] = new Currency("OMR", "512", 3, "Omani rial", "ر.ع."),
-["ISO-4217::PAB"] = new Currency("PAB", "590", 2, "Panamanian balboa", "B/."),
-["ISO-4217::PEN"] = new Currency("PEN", "604", 2, "Peruvian sol", "S/."),
-["ISO-4217::PGK"] = new Currency("PGK", "598", 2, "Papua New Guinean kina", "K"),
-["ISO-4217::PHP"] = new Currency("PHP", "608", 2, "Philippine Peso", "₱"), // or P or PHP or PhP
-["ISO-4217::PKR"] = new Currency("PKR", "586", 2, "Pakistani rupee", "Rs"),
-["ISO-4217::PLN"] = new Currency("PLN", "985", 2, "Polish złoty", "zł"),
-["ISO-4217::PYG"] = new Currency("PYG", "600", 0, "Paraguayan guaraní", "₲"),
-["ISO-4217::QAR"] = new Currency("QAR", "634", 2, "Qatari riyal", "ر.ق"), // or QR
-["ISO-4217::RON"] = new Currency("RON", "946", 2, "Romanian new leu", "lei"),
-["ISO-4217::RSD"] = new Currency("RSD", "941", 2, "Serbian dinar", "РСД"), // or RSD (or дин or d./д)
-["ISO-4217::RUB"] = new Currency("RUB", "643", 2, "Russian rouble", "₽"), // or R or руб (both onofficial)
-["ISO-4217::RWF"] = new Currency("RWF", "646", 0, "Rwandan franc", "RFw"), // or RF, R₣
 ["ISO-4217::SAR"] = new Currency("SAR", "682", 2, "Saudi riyal", "ر.س"), // or SR (Latin) or ﷼‎ (Unicode)
 ["ISO-4217::SBD"] = new Currency("SBD", "090", 2, "Solomon Islands dollar", "SI$"),
 ["ISO-4217::SCR"] = new Currency("SCR", "690", 2, "Seychelles rupee", "SR"), // or SRe

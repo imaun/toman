@@ -62,13 +62,18 @@ public class Currency
     /// </summary>
     public string? WikipediaUrl { get; private set; }
     
-    
+    /// <summary>
+    /// Some currencies has more than one symbol!
+    /// </summary>
+    public string[]? AlternativeSymbols { get; private set; }
+
     #endregion
     
     
     private Currency(
         string code, string numberCode, string englishName, string symbol,
-        int decimalCount, string? persianName, string[]? locations, string? wikipediaUrl)
+        int decimalCount, string? persianName, string[]? locations, 
+        string? wikipediaUrl, string[]? alternativeSymbols)
     {
         code.ThrowIfArgumentIsNull(nameof(code));
         numberCode.ThrowIfArgumentIsNull(nameof(numberCode));
@@ -82,9 +87,10 @@ public class Currency
         PersianName = persianName;
         Locations = locations;
         WikipediaUrl = wikipediaUrl;
+        AlternativeSymbols = alternativeSymbols;
     }
 
-    
+
     /// <summary>
     /// Creates a new Currency.
     /// </summary>
@@ -96,14 +102,16 @@ public class Currency
     /// <param name="persianName">Persian name for the currency</param>
     /// <param name="locations">Locations which support this currency</param>
     /// <param name="wikipediaUrl">The url for Wikipedia page for this currency</param>
+    /// <param name="alternativeSumbols"></param>
     /// <returns>A new currency with the specified attributes.</returns>
     public static Currency Create(
         string code, string numberCode, string englishName, string symbol, int decimalCount, 
-        string? persianName = null, string[]? locations = null, string? wikipediaUrl = null)
+        string? persianName = null, string[]? locations = null, string? wikipediaUrl = null,
+        string[]? alternativeSumbols = null)
     {
         return new Currency(
             code, numberCode, englishName, symbol, decimalCount,
-            persianName, locations, wikipediaUrl);
+            persianName, locations, wikipediaUrl, alternativeSumbols);
     }
     
 }
