@@ -425,6 +425,73 @@ internal static class CurrencySource
         ["LDR"] = Currency.Create("LRD", "430", "Liberian dollar", "$", 2, "دلار لیبریا", new[]
         {
             "Liberia"
-        }, "https://en.wikipedia.org/wiki/Liberian_dollar")
+        }, "https://en.wikipedia.org/wiki/Liberian_dollar"),
+        
+        ["LSL"] = Currency.Create("LSL", "426", "Lesotho loti", "L", 2, "لوتی لسوتو", new[]
+        {
+            "Lesotho"
+        }, "https://en.wikipedia.org/wiki/Lesotho_loti"),
+        
+        ["LYD"] = Currency.Create("LYD", "434", "Libyan dinar", "ل.د", 3, "دینار لیبی", new []
+        {
+            "Libya"
+        }, "https://en.wikipedia.org/wiki/Libyan_dinar"),
+        
+        ["MAD"] = Currency.Create("MAD", "504","Moroccan dirham", "د.م.", 2, "درهم مراکش", new []
+        {
+            " Morocco", "Western Sahara"
+        }, "https://en.wikipedia.org/wiki/Moroccan_dirham"),
+        
+        ["MDL"] = Currency.Create("MDL", "498", "Moldovan leu", "L", 2, "لئوی مولداوی", new []
+        {
+            "Moldova"
+        }, "https://en.wikipedia.org/wiki/Moldovan_leu"),
+        
+        ["MGA"] = Currency.Create("MGA", "969", "Malagasy ariary", "Ar", 2, "آریاری ماداگاسکار", new[]
+        {
+            "Madagascar"
+        }, "https://en.wikipedia.org/wiki/Malagasy_ariary"),
+        
+        ["MKD"] = Currency.Create("MKD", "807", "Macedonian denar", "ден", 2, "دینار مقدونیه", new []
+        {
+            "North Macedonia"
+        }, "https://en.wikipedia.org/wiki/Macedonian_denar"),
+        
+        ["MMK"] = Currency.Create("MMK", "104", "Myanma kyat", "K", 2, "کیات میانمار", new []
+        {
+            "Myanmar"
+        }, "https://en.wikipedia.org/wiki/Myanmar_kyat"),
+        
+        ["MNT"] = Currency.Create("MNT", "496", "Mongolian tugrik", "₮", 2, "توگروگ مغولستان", new []
+        {
+            "Mongolia"
+        }, "https://en.wikipedia.org/wiki/Mongolian_t%C3%B6gr%C3%B6g"),
+        
+        ["MOP"] = Currency.Create("MOP", "446", "Macanese pataca", "MOP$", 2, "پاتاکای ماکائو", new []
+        {
+            "Macau"
+        }, "https://en.wikipedia.org/wiki/Macanese_pataca"),
+        
+        ["MRU"] = Currency.Create("MRU", "929", "Mauritanian ouguiya", "UM", 2, "اوقیه موریتانی", new []
+        {
+            "Mauritania"
+        }, "https://en.wikipedia.org/wiki/Mauritanian_ouguiya"),
+        
+        ["MUR"] = Currency.Create("MUR", "480", "Mauritian rupee", "Rs", 2, "روپیه موریس", new []
+        {
+            "Mauritius"
+        }, "https://en.wikipedia.org/wiki/Mauritian_rupee"),
+        
+        ["MVR"] = Currency.Create("MVR", "462", "Maldivian rufiyaa", "Rf", 2, "روفیه مالدیو", new []
+        {
+            "Maldives"
+        }, "https://en.wikipedia.org/wiki/Maldivian_rufiyaa"),
+        
+        ["MWK"] = Currency.Create("MWK", "454", "Malawi kwacha", "MK", 2, "کواچا مالاویا", new []
+        {
+            "Malawi"
+        }, "https://en.wikipedia.org/wiki/Malawian_kwacha"),
+        
+        
     };
 }

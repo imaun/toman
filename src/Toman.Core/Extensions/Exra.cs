@@ -1,18 +1,5 @@
 
 
-["ISO-4217::LRD"] = new Currency("LRD", "430", 2, "Liberian dollar", "$"), // or L$, LD$
-["ISO-4217::LSL"] = new Currency("LSL", "426", 2, "Lesotho loti", "L"), // L or M (pl.)
-["ISO-4217::LYD"] = new Currency("LYD", "434", 3, "Libyan dinar", "ل.د"), // or LD
-["ISO-4217::MAD"] = new Currency("MAD", "504", 2, "Moroccan dirham", "د.م."),
-["ISO-4217::MDL"] = new Currency("MDL", "498", 2, "Moldovan leu", "L"),
-["ISO-4217::MGA"] = new Currency("MGA", "969", Z07, "Malagasy ariary", "Ar"),  // divided into five subunits rather than by a power of ten. 5 is 10 to the power of 0.69897...
-["ISO-4217::MKD"] = new Currency("MKD", "807", 0, "Macedonian denar", "ден"),
-["ISO-4217::MMK"] = new Currency("MMK", "104", 0, "Myanma kyat", "K"),
-["ISO-4217::MNT"] = new Currency("MNT", "496", 2, "Mongolian tugrik", "₮"),
-["ISO-4217::MOP"] = new Currency("MOP", "446", 2, "Macanese pataca", "MOP$"),
-["ISO-4217::MRU"] = new Currency("MRU", "929", Z07, "Mauritanian ouguiya", "UM", validFrom: new DateTime(2018, 01, 01)), // divided into five subunits rather than by a power of ten. 5 is 10 to the power of 0.69897...
-["ISO-4217::MUR"] = new Currency("MUR", "480", 2, "Mauritian rupee", "Rs"),
-["ISO-4217::MVR"] = new Currency("MVR", "462", 2, "Maldivian rufiyaa", "Rf"), // or , MRf, MVR, .ރ or /-
 ["ISO-4217::MWK"] = new Currency("MWK", "454", 2, "Malawi kwacha", "MK"),
 ["ISO-4217::MXN"] = new Currency("MXN", "484", 2, "Mexican peso", "$"),
 ["ISO-4217::MXV"] = new Currency("MXV", "979", 2, "Mexican Unidad de Inversion (UDI) (funds code)", Currency.GenericCurrencySign),  // <==== not found
