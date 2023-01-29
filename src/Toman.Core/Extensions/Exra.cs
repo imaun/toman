@@ -1,49 +1,14 @@
 
-
-["ISO-4217::SAR"] = new Currency("SAR", "682", 2, "Saudi riyal", "ر.س"), // or SR (Latin) or ﷼‎ (Unicode)
-["ISO-4217::SBD"] = new Currency("SBD", "090", 2, "Solomon Islands dollar", "SI$"),
-["ISO-4217::SCR"] = new Currency("SCR", "690", 2, "Seychelles rupee", "SR"), // or SRe
-["ISO-4217::SDG"] = new Currency("SDG", "938", 2, "Sudanese pound", "ج.س."),
-["ISO-4217::SEK"] = new Currency("SEK", "752", 2, "Swedish krona/kronor", "kr"),
-["ISO-4217::SGD"] = new Currency("SGD", "702", 2, "Singapore dollar", "S$"), // or $
-["ISO-4217::SHP"] = new Currency("SHP", "654", 2, "Saint Helena pound", "£"),
-["ISO-4217::SLL"] = new Currency("SLL", "694", 0, "Sierra Leonean leone", "Le"),
-["ISO-4217::SOS"] = new Currency("SOS", "706", 2, "Somali shilling", "S"), // or Sh.So.
-["ISO-4217::SRD"] = new Currency("SRD", "968", 2, "Surinamese dollar", "$"),
-["ISO-4217::SSP"] = new Currency("SSP", "728", 2, "South Sudanese pound", "£"), // not sure about symbol...
-["ISO-4217::SVC"] = new Currency("SVC", "222", 2, "El Salvador Colon", "₡"),
-["ISO-4217::SYP"] = new Currency("SYP", "760", 2, "Syrian pound", "ܠ.ܣ.‏"), // or LS or £S (or £)
-["ISO-4217::SZL"] = new Currency("SZL", "748", 2, "Swazi lilangeni", "L"), // or E (plural)
-["ISO-4217::THB"] = new Currency("THB", "764", 2, "Thai baht", "฿"),
-["ISO-4217::TJS"] = new Currency("TJS", "972", 2, "Tajikistani somoni", "смн"),
-["ISO-4217::TMT"] = new Currency("TMT", "934", 2, "Turkmenistani manat", "m"), // or T?
-["ISO-4217::TND"] = new Currency("TND", "788", 3, "Tunisian dinar", "د.ت"), // or DT (Latin)
-["ISO-4217::TOP"] = new Currency("TOP", "776", 2, "Tongan paʻanga", "T$"), // (sometimes PT)
-["ISO-4217::TRY"] = new Currency("TRY", "949", 2, "Turkish lira", "₺"),
-["ISO-4217::TTD"] = new Currency("TTD", "780", 2, "Trinidad and Tobago dollar", "$"), // or TT$
-["ISO-4217::TWD"] = new Currency("TWD", "901", 2, "New Taiwan dollar", "NT$"), // or $
-["ISO-4217::TZS"] = new Currency("TZS", "834", 2, "Tanzanian shilling", "x/y"), // or TSh
-["ISO-4217::UAH"] = new Currency("UAH", "980", 2, "Ukrainian hryvnia", "₴"),
-["ISO-4217::UGX"] = new Currency("UGX", "800", 2, "Ugandan shilling", "USh"),
-["ISO-4217::USD"] = new Currency("USD", "840", 2, "United States dollar", "$"), // or US$
-["ISO-4217::USN"] = new Currency("USN", "997", 2, "United States dollar (next day) (funds code)", "$"),
-["ISO-4217::UYI"] = new Currency("UYI", "940", 0, "Uruguay Peso en Unidades Indexadas (UI) (funds code)", Currency.GenericCurrencySign), // List two
-["ISO-4217::UYU"] = new Currency("UYU", "858", 2, "Uruguayan peso", "$"), // or $U
-["ISO-4217::UZS"] = new Currency("UZS", "860", 2, "Uzbekistan som", "лв"), // or сўм ?
-["ISO-4217::VES"] = new Currency("VES", "928", 2, "Venezuelan Bolívar Soberano", "Bs.", validFrom: new DateTime(2018, 8, 20)), // or Bs.F. , Amendment 167 talks about delay but from multiple sources on the web the date seems to be 20 aug.
-["ISO-4217::VND"] = new Currency("VND", "704", 0, "Vietnamese dong", "₫"),
-["ISO-4217::VUV"] = new Currency("VUV", "548", 0, "Vanuatu vatu", "VT"),
-["ISO-4217::WST"] = new Currency("WST", "882", 2, "Samoan tala", "WS$"), // sometimes SAT, ST or T
-["ISO-4217::XAF"] = new Currency("XAF", "950", 0, "CFA franc BEAC", "FCFA"),
-["ISO-4217::XAG"] = new Currency("XAG", "961", NotApplicable, "Silver (one troy ounce)", Currency.GenericCurrencySign),
-["ISO-4217::XAU"] = new Currency("XAU", "959", NotApplicable, "Gold (one troy ounce)", Currency.GenericCurrencySign),
 ["ISO-4217::XBA"] = new Currency("XBA", "955", NotApplicable, "European Composite Unit (EURCO) (bond market unit)", Currency.GenericCurrencySign),
 ["ISO-4217::XBB"] = new Currency("XBB", "956", NotApplicable, "European Monetary Unit (E.M.U.-6) (bond market unit)", Currency.GenericCurrencySign),
 ["ISO-4217::XBC"] = new Currency("XBC", "957", NotApplicable, "European Unit of Account 9 (E.U.A.-9) (bond market unit)", Currency.GenericCurrencySign),
 ["ISO-4217::XBD"] = new Currency("XBD", "958", NotApplicable, "European Unit of Account 17 (E.U.A.-17) (bond market unit)", Currency.GenericCurrencySign),
-["ISO-4217::XCD"] = new Currency("XCD", "951", 2, "East Caribbean dollar", "$"), // or EC$
+    
+    
+    
 ["ISO-4217::XDR"] = new Currency("XDR", "960", NotApplicable, "Special drawing rights", Currency.GenericCurrencySign),
-["ISO-4217::XOF"] = new Currency("XOF", "952", 0, "CFA franc BCEAO", "CFA"),
+    
+    
 ["ISO-4217::XPD"] = new Currency("XPD", "964", NotApplicable, "Palladium (one troy ounce)", Currency.GenericCurrencySign),
 ["ISO-4217::XPF"] = new Currency("XPF", "953", 0, "CFP franc", "F"),
 ["ISO-4217::XPT"] = new Currency("XPT", "962", NotApplicable, "Platinum (one troy ounce)", Currency.GenericCurrencySign),

@@ -618,6 +618,194 @@ internal static class CurrencySource
             "Saudi Arabia"
         }, "https://en.wikipedia.org/wiki/Saudi_riyal", new []{ "SR", "﷼" }),
         
+        ["SBD"] = Currency.Create("SBD", "090", "Solomon Islands dollar", "SI$", 2, "دلار جزایر سلیمان", new[]
+        {
+            "Solomon Islands"
+        }, "https://en.wikipedia.org/wiki/Solomon_Islands_dollar"),
         
-    };
+        ["SCR"] = Currency.Create("SCR", "690", "Seychelles rupee", "SR", 2, "روپیه سیشل", new []
+        {
+            "Seychelles"
+        }, "https://en.wikipedia.org/wiki/Seychelles_rupee", new []{ "SRe" }),
+        
+        ["SDG"] = Currency.Create("SDG", "938", "Sudanese pound", "ج.س.", 2, "پوند سودان", new []
+        {
+            "Sudan"
+        }, "https://en.wikipedia.org/wiki/Sudanese_pound"),
+        
+        ["SEK"] = Currency.Create("SEK", "752", "Swedish krona/kronor", "kr", 2, "کرون سوئد", new []
+        {
+            "Sweden"
+        }, "https://en.wikipedia.org/wiki/Swedish_krona"),
+        
+        ["SGD"] = Currency.Create("SGD", "702", "Singapore dollar", "S$", 2, "دلار سنگاپور", new []
+        {
+            "Singapore"
+        }, "https://en.wikipedia.org/wiki/Singapore_dollar", new []{ "$" }),
+        
+        ["SHP"] = Currency.Create("SHP", "654", "Saint Helena pound", "£", 2, "پوند سنت هلن", new []
+        {
+            "Saint Helena", "Ascension Island"
+        }, "https://en.wikipedia.org/wiki/Saint_Helena_pound"),
+        
+        ["SLL"] = Currency.Create("SLL", "694", "Sierra Leonean leone", "Le", 2, "لئون سیرالئون", new []
+        {
+            "Sierra Leone"
+        }, "https://en.wikipedia.org/wiki/Sierra_Leonean_leone"),
+        
+        ["SOS"] = Currency.Create("SOS", "706","Somali shilling", "S", 2, "شیلینگ سومالی", new []
+        {
+            "Somalia"
+        }, "https://en.wikipedia.org/wiki/Somali_shilling"),
+        
+        ["SRD"] = Currency.Create("SRD", "968", "Surinamese dollar", "$", 2, "دلار سورینام", new []
+        {
+            "Suriname"
+        }, "https://en.wikipedia.org/wiki/Surinamese_dollar"),
+        
+        ["SSP"] = Currency.Create("SSP", "728", "South Sudanese pound", "£",2, "پوند سودان جنوبی", new []
+        {
+            "South Sudan"
+        }, "https://en.wikipedia.org/wiki/South_Sudanese_pound"),
+        
+        ["SVC"] = Currency.Create("SVC", "222", "El Salvador Colon", "₡", 2, "کولون السالوادور", new []
+        {
+            "El Salvador"
+        }, "https://en.wikipedia.org/wiki/Salvadoran_col%C3%B3n"),
+        
+        ["SYP"] = Currency.Create("SYP", "760","Syrian pound", "ܠ.ܣ.‏", 2, "لیره سوریه", new []
+        {
+            "Syria"
+        }, "https://en.wikipedia.org/wiki/Syrian_pound", new []{ "LS", "£S", "£" }),
+        
+        ["SZL"] = Currency.Create("SZL", "748", "Swazi lilangeni", "L",2, "لیلانگنی سوازی", new []
+        {
+            "Eswatini"
+        }, "https://en.wikipedia.org/wiki/Swazi_lilangeni", new []{ "E" }),
+        
+        ["THB"] = Currency.Create("THB", "764", "Thai baht", "฿", 2, "بات تایلند", new []
+        {
+            "Thailand"
+        }, "https://en.wikipedia.org/wiki/Thai_baht"),
+        
+        ["TJS"] = Currency.Create("TJS", "972", "Tajikistani somoni", "смн", 2, "سامانی", new []
+        {
+            "Tajikistan"
+        }, "https://en.wikipedia.org/wiki/Tajikistani_somoni"),
+        
+        ["TMT"] = Currency.Create("TMT", "934", "Turkmenistani manat", "m",2, "منات ترکمنستان", new []
+        {
+            ""
+        }, "https://en.wikipedia.org/wiki/Turkmenistani_manat", new []{ "T?" }),
+        
+        ["TND"] = Currency.Create("TND", "788", "Tunisian dinar", "د.ت", 3, "دینار تونس", new []
+        {
+            "Tunisia"
+        }, "https://en.wikipedia.org/wiki/Tunisian_dinar", new []{ "DT" }),
+        
+        ["TOP"] = Currency.Create("TOP", "776", "Tongan paʻanga", "T$", 2, "پاآنگای تونگا", new []
+        {
+            "Tonga"
+        }, "https://en.wikipedia.org/wiki/Tongan_pa%CA%BBanga", new []{ "PT" }),
+        
+        ["TRY"] = Currency.Create("TRY", "949", "Turkish lira", "₺", 2, "لیره ترک", new []
+        {
+            "Turkey"
+        }, "https://en.wikipedia.org/wiki/Turkish_lira"), 
+        
+        ["TTD"] = Currency.Create("TTD", "780", "Trinidad and Tobago dollar", "$", 2, "دلار ترینیداد و توباگو", new []
+        {
+            "Trinidad and Tobago"
+        }, "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_dollar", new []{ "TT$" }),
+        
+        ["TWD"] = Currency.Create("TWD", "901", "New Taiwan dollar", "NT$", 2, "دلار جدید تایوان", new []
+        {
+            "Taiwan"
+        }, "https://en.wikipedia.org/wiki/New_Taiwan_dollar", new []{ "$" }),
+        
+        ["TZS"] = Currency.Create("TZS", "834", "Tanzanian shilling", "x/y", 2, "شیلینگ تانزانیا", new []
+        {
+            "Tanzania"
+        }, "https://en.wikipedia.org/wiki/Tanzanian_shilling", new []{ "TSh" }),
+        
+        ["UAH"] = Currency.Create("UAH", "980", "Ukrainian hryvnia", "₴", 2, "گریونا اوکراین", new []
+        {
+            "Ukraine"
+        }, "https://en.wikipedia.org/wiki/Ukrainian_hryvnia"),
+        
+        ["UGX"] = Currency.Create("UGX", "800", "Ugandan shilling", "USh", 0, "شیلینگ اوگاندا", new []
+        {
+            "Uganda"
+        }, "https://en.wikipedia.org/wiki/Ugandan_shilling"),
+        
+        ["USD"] = Currency.Create("USD", "840", "United States dollar", "$", 2, "دلار آمریکا", new []
+        {
+            "United States", "American Samoa", "British Indian Ocean Territory", "British Virgin Islands",
+            "Caribbean Netherlands", "Ecuador", "El Salvador", "Guam", "Marshall Islands", 
+            "Federated States of Micronesia", "Northern Mariana Islands", "Palau", "Panama",
+            "Puerto Rico", "Timor-Leste", "Turks and Caicos Islands", "U.S. Virgin Islands",
+            "United States Minor Outlying Islands"
+        }, "https://en.wikipedia.org/wiki/United_States_dollar", new []{ "US$" }),
+        
+        ["USN"] = Currency.Create("USN", "997", "United States dollar (next day) (funds code)", "$", 2, null, new []
+        {
+            "https://en.wikipedia.org/wiki/United_States"
+        }),
+        
+        ["UYU"] = Currency.Create("UYU", "858", "Uruguayan peso", "$", 2, "پزوی اروگوئه", new []
+        {
+            "Uruguay"
+        }, "https://en.wikipedia.org/wiki/Uruguayan_peso", new []{ "$U" }),
+        
+        ["UZS"] = Currency.Create("UZS", "860", "Uzbekistan som", "лв", 2, "سوم ازبکستان", new []
+        {
+            "Uzbekistan"
+        }, "https://en.wikipedia.org/wiki/Uzbekistani_soum", new []{ "сўм" }),
+        
+        ["VES"] = Currency.Create("VES", "928", "Venezuelan Bolívar Soberano", "Bs.", 2, "بولیوار ونزوئلا", new []
+        {
+            "Venezuela"
+        }, "https://en.wikipedia.org/wiki/Venezuelan_bol%C3%ADvar#Sovereign_bol%C3%ADvar", new []{"Bs.F"}),
+        
+        ["VND"] = Currency.Create("VND", "704", "Vietnamese dong", "₫", 0, "دانگ ویتنام", new []
+        {
+            "Vietnam"
+        }, "https://en.wikipedia.org/wiki/Vietnamese_%C4%91%E1%BB%93ng"),
+        
+        ["VUV"] = Currency.Create("VUV", "548", "Vanuatu vatu", "VT", 0, "واتوی وانواتو", new []
+        {
+            "Vanuatu"
+        }, "https://en.wikipedia.org/wiki/Vanuatu_vatu"),
+        
+        ["WST"] = Currency.Create("WST", "882", "Samoan tala", "WS$", 2, "تالای ساموآ", new []
+        {
+            "Samoa"
+        }, "https://en.wikipedia.org/wiki/Samoan_tala", new []{ "SAT", "ST", "T" }),
+        
+        ["XAF"] = Currency.Create("XAF", "950", "CFA franc BEAC", "FCFA", 0, "فرانک سی‌اف‌ای آفریقای میانه", new []
+        {
+            "Cameroon", "Central African Republic", "Republic of the Congo", "Chad",
+            "Equatorial Guinea", "Gabon"
+        }, "https://en.wikipedia.org/wiki/Central_African_CFA_franc"),
+        
+        ["XAG"] = Currency.Create("XAG", "961", "Silver (one troy ounce)", Currency.UnknownCurrencySign, 0, "نقره"),
+        
+        ["XAU"] = Currency.Create("XAU", "959", "Gold (one troy ounce)", Currency.UnknownCurrencySign, 0, "طلا"),
+        
+        ["XCD"] = Currency.Create("XCD", "951", "East Caribbean dollar", "$", 2, "دلار کارائیب شرقی", new []
+        {
+            "Anguilla", "Antigua and Barbuda", "Dominica", "Grenada", "Montserrat", "Saint Kitts and Nevis",
+            "Saint Lucia", "Saint Vincent and the Grenadines"
+        }, "https://en.wikipedia.org/wiki/East_Caribbean_dollar", new []{ "EC$" }),
+        
+        ["XOF"] = Currency.Create("XOF", "952", "CFA franc BCEAO", "CFA", 0, "فرانک سی‌اف‌ای آفریقای غربی", new []
+        {
+            "Benin", "Burkina Faso", "Côte d'Ivoire", "Guinea-Bissau", "Mali", "Niger", "Senegal", "Togo"
+        }, "https://en.wikipedia.org/wiki/West_African_CFA_franc"),
+        
+        ["XPF"] = Currency.Create("XPF", "953", "CFP franc", "F", 0, "فرانک اقیانوسیه", new []
+        {
+            "French Polynesia", "New Caledonia", "Wallis and Futuna"
+        }, "https://en.wikipedia.org/wiki/CFP_franc")
+     };
 }
