@@ -10,15 +10,16 @@
     
     
 ["ISO-4217::XPD"] = new Currency("XPD", "964", NotApplicable, "Palladium (one troy ounce)", Currency.GenericCurrencySign),
-["ISO-4217::XPF"] = new Currency("XPF", "953", 0, "CFP franc", "F"),
+
+    
 ["ISO-4217::XPT"] = new Currency("XPT", "962", NotApplicable, "Platinum (one troy ounce)", Currency.GenericCurrencySign),
 ["ISO-4217::XSU"] = new Currency("XSU", "994", NotApplicable, "SUCRE", Currency.GenericCurrencySign),
 ["ISO-4217::XTS"] = new Currency("XTS", "963", NotApplicable, "Code reserved for testing purposes", Currency.GenericCurrencySign),
 ["ISO-4217::XUA"] = new Currency("XUA", "965", NotApplicable, "ADB Unit of Account", Currency.GenericCurrencySign),
 ["ISO-4217::XXX"] = new Currency("XXX", "999", NotApplicable, "No currency", Currency.GenericCurrencySign),
-["ISO-4217::YER"] = new Currency("YER", "886", 2, "Yemeni rial", "﷼"), // or ر.ي.‏‏ ?
-["ISO-4217::ZAR"] = new Currency("ZAR", "710", 2, "South African rand", "R"),
-["ISO-4217::ZMW"] = new Currency("ZMW", "967", 2, "Zambian kwacha", "ZK"), // or ZMW
+    
+    
+    
 ["ISO-4217::ZWL"] = new Currency("ZWL", "932", 2, "Zimbabwean dollar", "$"),
 ["ISO-4217::STN"] = new Currency("STN", "930", 2, "Dobra", "Db", validFrom: new DateTime(2018, 1, 1)), // New Currency of São Tomé and Príncipe from 1 Jan 2018 (Amendment 164)
 ["ISO-4217::STD"] = new Currency("STD", "678", 2, "Dobra", "Db", validTo: new DateTime(2018, 1, 1)), // To be replaced Currency of São Tomé and Príncipe from 1 Jan 2018 (Amendment 164),  inflation has rendered the cêntimo obsolete
