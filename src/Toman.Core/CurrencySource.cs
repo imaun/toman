@@ -1,4 +1,8 @@
+using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Linq;
+using Toman.Extensions;
 
 namespace Toman;
 
@@ -9,8 +13,37 @@ namespace Toman;
 /// <remarks>See: https://en.wikipedia.org/wiki/ISO_4217</remarks>
 internal static class CurrencySource
 {
+
+    private static ConcurrentDictionary<string, Currency> Currencies = new(_currencies);
+
+    /// <summary>
+    /// Get Enumeration of All Standard Currencies.
+    /// </summary>
+    public static IEnumerable<Currency> FindAll()
+    {
+        return Currencies.Values.AsEnumerable();
+    }
+
     
-    
+    /// <summary>
+    /// Find a <see cref="Currency"/> by it's Standard ISO code.
+    /// </summary>
+    /// <param name="code">ISO code for the currency</param>
+    public static Currency? FindByCode(string code)
+    {
+        if (code.IsNullOrEmpty())
+            throw new ArgumentNullException(nameof(code));
+
+        var normalizedCode = code.ToUpper().Trim();
+        
+        if(Currencies.TryGetValue(normalizedCode, out Currency item))
+        {
+            return item;
+        }
+
+        return null;
+    }
+
     private static IDictionary<string, Currency> _currencies = new Dictionary<string, Currency>
     {
         ["AED"] = Currency.Create("AED", "784", "United Arab Emirates dirham", "د.إ", 2, "درهم", new[]
