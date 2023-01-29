@@ -17,6 +17,7 @@
             It provides a way to deal with currency in finanical applications for Iranian and
             converts standard (ISO) international currencies to Rial and Toman based on the rate 
             which can passed manually or automatically via a service.
+            It contains all the Standard ISO 4217 codes for international currencies.
         </Description>
         <Copyright>(c) 2022 Iman Nemati</Copyright>
         <PackageProjectUrl>https://github.com/imaun/toman</PackageProjectUrl>
