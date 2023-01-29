@@ -1,13 +1,5 @@
 
 
-
-["ISO-4217::KRW"] = new Currency("KRW", "410", 0, "South Korean won", "₩"),
-["ISO-4217::KWD"] = new Currency("KWD", "414", 3, "Kuwaiti dinar", "د.ك"), // or K.D.
-["ISO-4217::KYD"] = new Currency("KYD", "136", 2, "Cayman Islands dollar", "$"),
-["ISO-4217::KZT"] = new Currency("KZT", "398", 2, "Kazakhstani tenge", "₸"),
-["ISO-4217::LAK"] = new Currency("LAK", "418", 0, "Lao Kip", "₭"), // or ₭N,  LAO PEOPLE’S DEMOCRATIC REPUBLIC(THE), ISO says minor unit=2 but wiki syas Historically, one kip was divided into 100 att (ອັດ).
-["ISO-4217::LBP"] = new Currency("LBP", "422", 0, "Lebanese pound", "ل.ل"),
-["ISO-4217::LKR"] = new Currency("LKR", "144", 2, "Sri Lankan rupee", "Rs"), // or රු
 ["ISO-4217::LRD"] = new Currency("LRD", "430", 2, "Liberian dollar", "$"), // or L$, LD$
 ["ISO-4217::LSL"] = new Currency("LSL", "426", 2, "Lesotho loti", "L"), // L or M (pl.)
 ["ISO-4217::LYD"] = new Currency("LYD", "434", 3, "Libyan dinar", "ل.د"), // or LD

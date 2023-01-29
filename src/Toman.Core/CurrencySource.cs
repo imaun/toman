@@ -390,6 +390,41 @@ internal static class CurrencySource
         ["KRW"] = Currency.Create("KRW", "410", "South Korean won", "₩", 0, "وون", new[]
         {
             "South Korea"
-        }, "https://en.wikipedia.org/wiki/South_Korean_won")
+        }, "https://en.wikipedia.org/wiki/South_Korean_won"),
+        
+        ["KWD"] = Currency.Create("KWD", "414", "Kuwaiti dinar", "د.ك", 3, "دینار کویت", new[]
+        {
+            "Kuwait"
+        }, "https://en.wikipedia.org/wiki/Kuwaiti_dinar"),
+        
+        ["KYD"] = Currency.Create("KYD", "136", "Cayman Islands dollar", "$", 2, "دلار جزایر کیمن", new[]
+        {
+            "Cayman Islands"
+        }, "https://en.wikipedia.org/wiki/Cayman_Islands_dollar"),
+        
+        ["KZT"] = Currency.Create("KZT", "398", "Kazakhstani tenge", "₸", 2, "تنگه", new []
+        {
+            "Kazakhstan"
+        }, "https://en.wikipedia.org/wiki/Kazakhstani_tenge"),
+        
+        ["LAK"] = Currency.Create("LAK", "418", "Lao Kip", "₭", 2, "کیپ لائوس", new[]
+        {
+            "Laos"
+        }, "https://en.wikipedia.org/wiki/Lao_kip"),
+        
+        ["LBP"] = Currency.Create("LBP", "422", "Lebanese pound", "ل.ل", 2, "لیره لبنان", new[]
+        {
+            "Lebanon"
+        }, "https://en.wikipedia.org/wiki/Lebanese_pound"),
+        
+        ["LKR"] = Currency.Create("LKR", "144", "Sri Lankan rupee", "Rs", 2, "روپیه سری‌لانکا", new[]
+        {
+            "Sri Lanka"
+        }, "https://en.wikipedia.org/wiki/Sri_Lankan_rupee"),
+        
+        ["LDR"] = Currency.Create("LRD", "430", "Liberian dollar", "$", 2, "دلار لیبریا", new[]
+        {
+            "Liberia"
+        }, "https://en.wikipedia.org/wiki/Liberian_dollar")
     };
 }
