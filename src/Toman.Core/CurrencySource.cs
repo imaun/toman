@@ -14,8 +14,13 @@ namespace Toman;
 internal static class CurrencySource
 {
 
-    private static ConcurrentDictionary<string, Currency> Currencies = new(_currencies);
+    private static ConcurrentDictionary<string, Currency> Currencies;
 
+    static CurrencySource()
+    {
+        Currencies = new(_currencies);
+    }
+    
     /// <summary>
     /// Get Enumeration of All Standard Currencies.
     /// </summary>
@@ -144,7 +149,7 @@ internal static class CurrencySource
             "Bolivia"
         }, "https://en.wikipedia.org/wiki/Boliviano"),
 
-        ["DRL"] = Currency.Create("DRL", "986", "Brazilian real", "R$", 2, "رآل برزیلی", new[]
+        ["BRL"] = Currency.Create("BRL", "986", "Brazilian real", "R$", 2, "رآل برزیلی", new[]
         {
             "Brazil"
         }, "https://en.wikipedia.org/wiki/Brazilian_real"),
@@ -291,7 +296,7 @@ internal static class CurrencySource
             "Fiji"
         }, "https://en.wikipedia.org/wiki/Fijian_dollar"),
 
-        ["FKP"] = Currency.Create("FPK", "238", "Falkland Islands pound", "£", 2, "پوند جزایر فالکلند", new[]
+        ["FKP"] = Currency.Create("FKP", "238", "Falkland Islands pound", "£", 2, "پوند جزایر فالکلند", new[]
         {
             "Falkland Islands"
         }, "https://en.wikipedia.org/wiki/Falkland_Islands_pound"),
@@ -462,7 +467,7 @@ internal static class CurrencySource
             "Sri Lanka"
         }, "https://en.wikipedia.org/wiki/Sri_Lankan_rupee"),
 
-        ["LDR"] = Currency.Create("LRD", "430", "Liberian dollar", "$", 2, "دلار لیبریا", new[]
+        ["LRD"] = Currency.Create("LRD", "430", "Liberian dollar", "$", 2, "دلار لیبریا", new[]
         {
             "Liberia"
         }, "https://en.wikipedia.org/wiki/Liberian_dollar"),
@@ -735,7 +740,7 @@ internal static class CurrencySource
 
         ["TMT"] = Currency.Create("TMT", "934", "Turkmenistani manat", "m", 2, "منات ترکمنستان", new[]
         {
-            ""
+            "Turkmenistan"
         }, "https://en.wikipedia.org/wiki/Turkmenistani_manat", new[] { "T?" }),
 
         ["TND"] = Currency.Create("TND", "788", "Tunisian dinar", "د.ت", 3, "دینار تونس", new[]

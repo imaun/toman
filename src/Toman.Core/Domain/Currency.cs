@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using Toman.Extensions;
 
 namespace Toman;
@@ -71,12 +73,12 @@ public class Currency
     
     
     private Currency(
-        string code, string numberCode, string englishName, string symbol,
+        string code, string numericCode, string englishName, string symbol,
         int decimalCount, string? persianName, string[]? locations, 
         string? wikipediaUrl, string[]? alternativeSymbols)
     {
         code.ThrowIfArgumentIsNull(nameof(code));
-        numberCode.ThrowIfArgumentIsNull(nameof(numberCode));
+        numericCode.ThrowIfArgumentIsNull(nameof(numericCode));
         englishName.ThrowIfArgumentIsNull(nameof(englishName));
         symbol.ThrowIfArgumentIsNull(nameof(symbol));
 
@@ -85,6 +87,10 @@ public class Currency
 
         Id = Guid.NewGuid();
         PersianName = persianName;
+        Code = code;
+        NumericCode = numericCode;
+        EnglishName = englishName;
+        Symbol = symbol;
         Locations = locations;
         WikipediaUrl = wikipediaUrl;
         AlternativeSymbols = alternativeSymbols;
@@ -102,16 +108,27 @@ public class Currency
     /// <param name="persianName">Persian name for the currency</param>
     /// <param name="locations">Locations which support this currency</param>
     /// <param name="wikipediaUrl">The url for Wikipedia page for this currency</param>
-    /// <param name="alternativeSumbols"></param>
+    /// <param name="alternativeSymbols"></param>
     /// <returns>A new currency with the specified attributes.</returns>
     public static Currency Create(
         string code, string numberCode, string englishName, string symbol, int decimalCount, 
         string? persianName = null, string[]? locations = null, string? wikipediaUrl = null,
-        string[]? alternativeSumbols = null)
+        string[]? alternativeSymbols = null)
     {
         return new Currency(
             code, numberCode, englishName, symbol, decimalCount,
-            persianName, locations, wikipediaUrl, alternativeSumbols);
+            persianName, locations, wikipediaUrl, alternativeSymbols);
     }
-    
+
+
+    public static Currency WithCode(string code)
+    {
+        return CurrencySource.FindByCode(code)!;
+    }
+
+
+    public static IEnumerable<Currency> GetAll()
+    {
+        return CurrencySource.FindAll();
+    }
 }
