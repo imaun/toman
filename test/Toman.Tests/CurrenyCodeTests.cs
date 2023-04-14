@@ -33,4 +33,31 @@ public class CurrencyCodeTests
             Assert.Equal("ریال", currency.Symbol);
         }
     }
+
+    [Fact]
+    public void AED_is_the_currency_code_for_Emirates() 
+    {
+        var dirham = Currency.WithCode("AED");
+
+        Assert.NotNull(dirham);
+        Assert.Equal("AED", dirham!.Code);
+        Assert.Equal("United Arab Emirates dirham", dirham.EnglishName);
+        Assert.Equal("United Arab Emirates", dirham.Locations[0]);
+    }
+
+
+    [Theory]
+    [InlineData("784", "AED")]
+    [InlineData("132", "CVE")]
+    [InlineData("230", "ETP")]
+    [InlineData("978", "EUR")]
+    [InlineData("840", "USD")]
+    [InlineData("356", "INR")]
+    [InlineData("344", "HKD")]
+    public void can_find_currency_with_the_numeric_code(string numericCode, string code) 
+    {
+        var currency = Currency.WithNumericCode(numericCode);
+        Assert.NotNull(currency);
+        Assert.Equal(code, currency!.Code);
+    }
 }
