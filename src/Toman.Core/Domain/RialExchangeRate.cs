@@ -5,7 +5,7 @@ namespace Toman;
 /// <summary>
 /// Represents exchange rate for <see cref="Rial"/> against another international <see cref="Currency"/>.
 /// </summary>
-public class RialExchangeRate
+public class RialExchangeRate : IEquatable<RialExchangeRate>
 {
 
     public RialExchangeRate(Currency currency, decimal rate) {
@@ -24,4 +24,25 @@ public class RialExchangeRate
     public decimal Rate { get; private set; } = 0;
 
     public DateTime LastUpdateDateTime { get; private set; }
+
+    public bool Equals(RialExchangeRate other) {
+        if(other is null || other.GetType() != this.GetType())
+            return false;
+
+        if(!this.Currency.Equals(other.Currency)) return false;
+
+        return this.Rate == other.Rate;
+    }
+
+    public override bool Equals(object obj) {
+        if (ReferenceEquals(null, obj)) return false;
+        if (ReferenceEquals(this, obj)) return true;
+        if(obj.GetType() != this.GetType()) return false;
+
+        return Equals((RialExchangeRate)obj);
+    }
+
+    public override int GetHashCode() {
+        return Rate.GetHashCode() + LastUpdateDateTime.GetHashCode();
+    }
 }
