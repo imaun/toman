@@ -49,6 +49,19 @@ internal static class CurrencySource
         return null;
     }
 
+
+    public static Currency? FindByNumericCode(string numericCode) 
+    {
+        if (numericCode.IsNullOrEmpty())
+            throw new ArgumentNullException(nameof(numericCode));
+
+        var normalizeNumericCode = numericCode.Trim();
+        if (!normalizeNumericCode.IsNumeric())
+            throw new FormatException("Incorrect format! The NumericCode must be a Number.");
+
+        return _currencies.Values.FirstOrDefault(c => c.NumericCode.Equals(normalizeNumericCode));
+    }
+
     private static IDictionary<string, Currency> _currencies = new Dictionary<string, Currency>
     {
         ["AED"] = Currency.Create("AED", "784", "United Arab Emirates dirham", "د.إ", 2, "درهم", new[]

@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace Toman.Extensions;
 
@@ -26,4 +27,11 @@ internal static class Extensions
             throw new NullReferenceException(name);
     }
     
+    public static bool IsNumeric(this string str) 
+    {
+        if (str.IsNullOrEmpty())
+            throw new ArgumentNullException(nameof(str));
+
+        return str.All(char.IsDigit);
+    }
 }

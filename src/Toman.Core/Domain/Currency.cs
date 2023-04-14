@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using Toman.Extensions;
 
@@ -121,11 +120,15 @@ public class Currency
     }
 
 
-    public static Currency WithCode(string code)
+    public static Currency? WithCode(string code)
     {
         return CurrencySource.FindByCode(code)!;
     }
 
+    public static Currency? WithNumericCode(string numericCode) 
+    {
+        return CurrencySource.FindByNumericCode(numericCode);
+    }
 
     public static IEnumerable<Currency> GetAll()
     {
