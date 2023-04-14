@@ -17,12 +17,16 @@ public class RialExchangeRate : IEquatable<RialExchangeRate>
 
         this.Currency = currency;
         this.Rate = rate;
+        LastUpdateDateTime = DateTime.UtcNow;
     }
 
     public Currency Currency { get; private set; }
 
     public decimal Rate { get; private set; } = 0;
 
+    /// <summary>
+    /// Last update DateTime in UTC for this Rate
+    /// </summary>
     public DateTime LastUpdateDateTime { get; private set; }
 
     public bool Equals(RialExchangeRate other) {
