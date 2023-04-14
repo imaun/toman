@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.Design;
+using Toman.Extensions;
 
 namespace Toman;
 
@@ -38,7 +39,41 @@ public class Rial : IEquatable<Rial>
         return Convert.ToInt64(Math.Floor(divide));
     }
     
+
+    public decimal ExchangeTo(string currencyCode) {
+        if (currencyCode.IsNullOrEmpty())
+            throw new ArgumentNullException(nameof(currencyCode));
+
+        var exchangeRate = TomanExchangeSource.GetRate(currencyCode);
+        if (exchangeRate is null)
+            throw new ExchangeRateNotFoundException(currencyCode);
+
+        return Value / exchangeRate.Rate;
+    }
+
+    public static Rial From(string currencyCode, decimal amount) {
+        if (currencyCode.IsNullOrEmpty())
+            throw new ArgumentNullException(nameof(currencyCode));
+
+        if (amount <= 0)
+            throw new ArgumentOutOfRangeException("The Amount for exchange cannot be negative or zero.");
+
+        var exchangeRate = TomanExchangeSource.GetRate(currencyCode);
+        if (exchangeRate is null)
+            throw new ExchangeRateNotFoundException(currencyCode);
+
+        var valueInRial = CalculateFromRate(amount, exchangeRate.Rate);
+        return new Rial(valueInRial);
+    }
     
+
+    private static long CalculateFromRate(decimal amount, decimal rate) {
+        if (rate <= 0)
+            throw new RialExchangeRateOutOfRangeException();
+
+        return Convert.ToInt64(Math.Round(amount * rate));
+    }
+
     public bool Equals(Rial? other)
     {
         if (other is null || other.GetType() != this.GetType())

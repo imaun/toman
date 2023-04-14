@@ -27,4 +27,5 @@ public class ExchangeRateTests
         Assert.Throws<CurrencyNotFoundException>(
             () => TomanExchangeSource.SetRate(currencyCode, rate));
     }
+
 }
