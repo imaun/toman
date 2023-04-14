@@ -12,7 +12,7 @@ public class CurrencyCodeTests
         //The simplest test!
         var irr = Currency.WithCode("IRR");
         var expected = "Iranian Rial";
-        Assert.Equal(expected, irr.EnglishName);
+        Assert.Equal(expected, irr!.EnglishName);
     }
 
     [Fact]
@@ -42,7 +42,7 @@ public class CurrencyCodeTests
         Assert.NotNull(dirham);
         Assert.Equal("AED", dirham!.Code);
         Assert.Equal("United Arab Emirates dirham", dirham.EnglishName);
-        Assert.Equal("United Arab Emirates", dirham.Locations[0]);
+        Assert.Equal("United Arab Emirates", dirham.Locations![0]);
     }
 
 
