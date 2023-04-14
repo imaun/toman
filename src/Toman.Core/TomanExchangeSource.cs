@@ -70,7 +70,7 @@ public static class TomanExchangeSource
         if (currency is null)
             throw new CurrencyNotFoundException(currencyCode);
 
-        return GetRate(currencyCode);
+        return GetRate(currency);
     }
 
     /// <summary>
