@@ -39,7 +39,15 @@ public class Rial : IEquatable<Rial>
         return Convert.ToInt64(Math.Floor(divide));
     }
     
-
+    /// <summary>
+    /// Exchange the <see cref="Value"/> in Rial to the specified <see cref="Currency"/> by it's <paramref name="currencyCode"/>.
+    /// If the <see cref="RialExchangeRate"/> for the <paramref name="currencyCode"/> has not been set before,
+    /// it will raise <see cref="ExchangeRateNotFoundException"/>.
+    /// </summary>
+    /// <param name="currencyCode"><see cref="Currency"/> code that the value will convert</param>
+    /// <returns>The Equavalant value in the given <paramref name="currencyCode"/></returns>
+    /// <exception cref="ArgumentNullException"></exception>
+    /// <exception cref="ExchangeRateNotFoundException"></exception>
     public decimal ExchangeTo(string currencyCode) {
         if (currencyCode.IsNullOrEmpty())
             throw new ArgumentNullException(nameof(currencyCode));
@@ -51,6 +59,17 @@ public class Rial : IEquatable<Rial>
         return Value / exchangeRate.Rate;
     }
 
+    /// <summary>
+    /// Creates a <see cref="Rial"/> object from the given <paramref name="currencyCode"/>.
+    /// If a <see cref="Currency"/> with this code not found it will raise <see cref="CurrencyNotFoundException"/>,
+    /// or If the <see cref="RialExchangeRate"/> has not been set before it will raise <see cref="ExchangeRateNotFoundException"/>
+    /// </summary>
+    /// <param name="currencyCode"></param>
+    /// <param name="amount"></param>
+    /// <returns>A <see cref="Rial"/> object with a <see cref="Value"/> correspond to the <paramref name="amount"/> multipy and the <see cref="RialExchangeRate"/> of the given <paramref name="currencyCode"/></returns>
+    /// <exception cref="ArgumentNullException"></exception>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
+    /// <exception cref="ExchangeRateNotFoundException"></exception>
     public static Rial From(string currencyCode, decimal amount) {
         if (currencyCode.IsNullOrEmpty())
             throw new ArgumentNullException(nameof(currencyCode));
