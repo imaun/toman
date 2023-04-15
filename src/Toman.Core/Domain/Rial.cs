@@ -18,7 +18,7 @@ public class Rial : IEquatable<Rial>
     public Rial(long value)
     {
         if (value < 0) 
-            throw new ArgumentOutOfRangeException("Cannot instantinate Rial which has negative value.");
+            throw new ArgumentOutOfRangeException("Cannot instantinate Rial with a negative value.");
         
         Value = value;
     }

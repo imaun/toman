@@ -8,5 +8,6 @@ namespace Toman.Tests;
 
 public class RialExchangeTests
 {
-
+    
+    
 }
