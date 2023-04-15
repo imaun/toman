@@ -12,11 +12,13 @@ It contains all the information about the international currencies based on
 You can access all of these currencies in the [`CurrencySource`](https://github.com/imaun/toman/blob/master/src/Toman.Core/CurrencySource.cs)
 which is a static class. You can use it to find a specific currency by it's `curencyCode` or symbol.
 
+
 <div dir="rtl">
     کتابخانه <b>تومن</b>  به شما کمک می کند تا با مقادیر پولی و مالی به شکل مناسب تری کاز کنید.
 <b>تومن</b> لیستی از واحدهای بین المللی بر اساس استاندارد ISO 4217 را به شما ارائه می دهد که با استفاده از 
 آن ها می توانید با تنظیم نرخ مبادله با ریال، از قابلیت های تبدیل این کتابخانه استفاده کنید.
 </div>
+
 ### Features
 
 - Representing ISO 4217 Currencies in a static class
